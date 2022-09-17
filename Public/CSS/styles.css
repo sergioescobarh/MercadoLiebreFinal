@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --primaryFont: 'Roboto', sans-serif;
+    --secondaryFont:'Lobster', cursive;
+    --sm: 16px;
+    --md: 18px;
+    --lg: 24px;
+    --ssm: 12px;
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+*{font-family:var(--primaryFont);}
+
+* {
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+    }
+
+    main section article i {
+        display: block ;
+        font-size: 16 px ;
+        padding: 5 px ;
+        width: 30 px ;
+        height: 30 px ;
+        border: 1 px solid #39b54a ;
+        background-color: #FFF ;
+        border-radius: 50%;
+        position: absolute;
+        right: 20 px;
+        top: -15 px;
+        }
+
+header{
+    width:vw;
+    background-color: var(--amarillo);
+    padding: 3px 3px 0px 3px;
+}
+.main-content{
+    width: 90vw;
+    
+    justify-content: center;
+}
+footer{
+    text-align: center;
+}
+i{
+    /*font-size: 2em; */
+    margin-bottom: 10px;
+
+}
+article{
+    transition: all 850ms;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+}
+.CaracteristicasProductos{
+    display: flex;
+    flex-wrap:wrap;
+    border-top: #ebebeb solid 1px;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.ImagenProducto{
+    width: 90%;
+}
+
+.productos{
+    
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.articulosgrupo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ContenedorBanner{
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    width: 100vw;
+    margin-top: 7px;
+}
+/* Tamaños tipográficos */ 
+.cuerpos{
+    font-size: 12px;
+}
+.titulares{
+    font-size: 24px;
+    
+}
+.precios{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+    color:#39b54a;
+}
+.descripciones{
+    display: none;
+    transition: all 8500ms;
+}
+.Barras{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Barras a{
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 15px;
+    
+}
+.fa-truck{
+    color : var(--verde);
+    justify-content: flex-end;
+}
+.links{
+    margin: 15px;
+    
+}
+
+
+.logoml, .eslogan{
+    width: 45vw;
+    
+}
+
+.contenedor1{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.eslogan{
+    font-size: 10px;
+    line-height: 15px;
+}
+.MenuHamburguesa{
+    display: flex;
+    border-radius: 4px;
+    background-color: #03264C;
+    max-width: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.precioydescuento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    list-style: none;
+    margin:0;
+    padding:0;
+    font-size: 17px;
+    display: none;
+
+}
+
+article:hover .descripciones{
+    display: block;
+    font-size: 16px;
+    margin-top: 1rem;
+    font-weight: normal;
+    color: var(--grisOscuro);
+}
+
+article:hover .fa-truck{
+    transform: rotate(-90deg);
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /*width: 50%; */ 
+    
+}
+
+@media (min-width:769px){
+    .productos{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .logoml, .eslogan{
+        width: 30vw;
+        
+    }
+    .MenuHamburguesa{
+        display: none;
+    }
+    article{
+        width: 20vw;
+    }
+    .ImagenProducto{
+   
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+}
+.contenedor1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eslogan{
+    max-width:600px ;
+    text-align: right;
+    font-size: 25px;
+}
+
+.Barras{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    
+    display: flex;
+    flex-direction: row;
+}
+}
+
+@media (min-width:361px){ 
+    .eslogan{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
