@@ -3,7 +3,9 @@ const app = express();
 const path= require('path');
 //Middleware
 
-app.use(express.static('public'));
+///
+
+app.use(express.static('Public'));
 
 //rUTAS:
 app.get("/", (req, res) => {
